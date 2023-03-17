@@ -1,0 +1,301 @@
+<html>
+
+<head>
+
+    <title>Donation attempt</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <!-- <link href="./favicon.ico" rel="icon" type="image/x-icon"> -->
+    <link href="./icon-152x152.png" rel="apple-touch-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* General Styles 
+		------------------------------*/
+
+        body {
+
+            margin: 0;
+            min-height: 100%;
+            background: #eee;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 40px;
+            margin: 0;
+            margin: 0 0 15px 0;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 30px;
+            margin: 0;
+            padding: 0 15px;
+        }
+
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            user-select: none;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            transition: box-shadow 0.15s ease, transform 0.15s ease;
+            will-change: box-shadow, transform;
+            background: #ff6666;
+            box-shadow: 0px 2px 4px #ff666666, 0px 7px 13px -3px #ff66664f, inset 0px -3px 0px #ff6666;
+            min-height: 48px;
+            padding: 5px 32px;
+            margin: 0 15px;
+            font-size: 18px;
+            border-radius: 6px;
+            color: #fff;
+            transition: box-shadow 0.15s ease, transform 0.15s ease;
+        }
+
+        .button:hover {
+            box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+            transform: translateY(-2px);
+        }
+
+        .button:active {
+            box-shadow: inset 0px 3px 7px #d6d6e7;
+            transform: translateY(2px);
+        }
+
+        .scene {
+            display: none;
+            overflow: hidden;
+            max-width: 100%;
+            padding: 25px 0;
+        }
+
+        .scene.active {
+            display: block;
+        }
+
+        .scene h2 {
+            margin-bottom: 30px;
+        }
+
+        .scene img {
+            display: block;
+            margin: auto;
+            min-width: 232px;
+            max-width: 232px;
+        }
+
+        .scene-content {
+            height: 400px;
+            margin-bottom: 50px;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
+        .images img:first-child {
+            margin-right: -50px;
+        }
+
+        .images img:last-child {
+            margin-left: -50px;
+        }
+
+        @media screen and (min-width: 500px) {
+
+            .images img:first-child {
+                margin-right: 0px;
+            }
+
+            .images img:last-child {
+                margin-left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body light-mode="light">
+
+
+    <div class="scene active">
+        <div class="scene-content">
+            <h2>
+                Донат? Серьезно? Мне?
+            </h2>
+
+            <img src="img/6.gif" alt="" style="position: relative; left: -30px;">
+        </div>
+
+        <div class="button-wrapper">
+            <div class="button">
+                Конечно
+            </div>
+        </div>
+    </div>
+
+    <div class="scene">
+        <div class="scene-content">
+
+            <h2>
+                Может лучше не стоит?
+            </h2>
+
+            <img src="img/7.gif" alt="" style="position: relative; left: -30px">
+        </div>
+
+        <div class="button-wrapper">
+            <div class="button">
+                Еще как стоит
+            </div>
+        </div>
+    </div>
+
+    <div class="scene">
+        <div class="scene-content">
+
+            <h2>
+                Походу на эти денешки я объемся нутеллой
+            </h2>
+
+            <img src="img/3.gif" alt="" style="position: relative; top: -50px;">
+        </div>
+
+        <div class="button-wrapper">
+            <div class="button">
+                Еще и на чай останется
+            </div>
+        </div>
+    </div>
+
+    <div class="scene">
+        <div class="scene-content">
+            <h2>
+                Может сначала немного потанцуем?
+            </h2>
+            <img src="img/5.gif" alt="" style="position: relative; top: -50px; left: -30px">
+        </div>
+
+        <div class="button-wrapper">
+            <div class="button">
+                А давай
+            </div>
+        </div>
+    </div>
+    <!-- 
+    <div class="scene">
+        <div class="scene-content">
+
+            <h2>
+                Да...Вот так...У тебя отлично получается
+            </h2>
+
+            <div class="images">
+                <img src="img/2-mirror.gif" alt="">
+                <img src="img/8.gif" alt="">
+            </div>
+        </div>
+
+        <div class="button-wrapper">
+            <div class="button">
+                Как же я хорош...
+            </div>
+            <div class="button">
+                Но...я девочка...
+            </div>
+        </div>
+    </div> -->
+
+    <div class="scene">
+        <div class="scene-content">
+
+            <h2>
+                Choose your dancer...
+            </h2>
+
+            <div class="images">
+                <img src="img/9-mirror.gif" alt="">
+                <img src="img/8.gif" alt="">
+            </div>
+        </div>
+
+        <div class="button-wrapper">
+            <div class="button">
+                Как же мы хороши хоспаде
+            </div>
+        </div>
+    </div>
+
+
+    <div class="scene">
+        <div class="scene-content">
+
+            <h2>
+                Спасибо что ты есть
+            </h2>
+
+            <div class="images">
+                <img src="img/12.gif" alt="">
+            </div>
+
+            <br>
+            <br>
+            <h2>
+                ...и за попытку)
+            </h2>
+        </div>
+    </div>
+
+
+    <!-- <div style="display: flex; flex-wrap: wrap;">
+        <img src="img/1.gif" alt="">
+        <img src="img/2.gif" alt="">
+        <img src="img/3.gif" alt="">
+        <img src="img/4.gif" alt="">
+        <img src="img/5.gif" alt="">
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script>
+
+        $('.button').on('click', function () {
+            $('.scene').removeClass('active');
+
+            var currentScene = $(this).closest('.scene');
+            var next = currentScene.next('.scene');
+
+            if (next.length) {
+                next.addClass('active');
+            } else {
+                currentScene.addClass('active');
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
